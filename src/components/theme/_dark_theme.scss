@@ -1,0 +1,39 @@
+/* ========== start of variable ========== */
+:root {
+  --hue: 360;
+  --sat: 100%;
+
+  --primary-color: hsl(var(--hue), var(--sat), 50%);
+  --secondary-color: hsl(var(--hue), var(--sat), 60%);
+  --tertiary-color: hsl(var(--hue), var(--sat), 40%);
+
+  --title-color: hsl(var(--hue), 5%, 5%);
+  --text-color: hsl(var(--hue), 0%, 10%);
+  --section-background-color: hsl(var(--hue), 100%, 100%);
+  --body-background-color: hsl(var(--hue), 100%, 100%);
+}
+/* ========== end of variable ========== */
+/* ========== start of body ========== */
+body {
+  color: var(--text-color);
+  background-color: var(--body-background-color);
+}
+/* ========== end of body ========== */
+/* ========== header ========== */
+header .section {
+  color: var(--text-color);
+  background-color: var(--section-background-color);
+}
+/* ========== end header ========== */
+/* ========== start main ========== */
+main .section {
+  color: var(--text-color);
+  background-color: var(--section-background-color);
+}
+/* ========== end main ========== */
+/* ========== start footer ========== */
+footer .section {
+  color: var(--text-color);
+  background-color: var(--section-background-color);
+}
+/* ========== end of footer ========== */

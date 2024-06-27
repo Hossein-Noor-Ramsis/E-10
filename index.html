@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hossein-Noor-Ramsis" />
+
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="./Source/Image/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./Source/Image/favicon.ico" />
+
+    <link rel="stylesheet" href="./src/styles/app.css" />
+  </head>
+  <body class="text-white bg-[#030913]">
+    <header class="z-10 text-white">
+      <!-- ==================== navbar ==================== -->
+      <nav
+        class="flex justify-between items-center bg-transparent gap-10 p-4 backdrop-blur"
+      >
+        <!-- ===== Nav Logo ===== -->
+        <div>
+          <a class="font-extrabold text-3xl" href="#">Logo</a>
+        </div>
+
+        <!-- ===== Nav Menu Btn ===== -->
+        <div class="sm:hidden">
+          <!-- open menu btn -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-7"
+            id="open-menu"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <!-- close menu btn -->
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7 hidden"
+            id="close-menu"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <!-- ===== Nav List ===== -->
+        <div
+          id="nav-list"
+          class="backdrop-blur hidden absolute top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
+        >
+          <ul
+            class="flex flex-col gap-8 justify-between items-center sm:flex-row sm:gap-4"
+          >
+            <li class="active">
+              <a
+                class="bg-[#f9f9f9] text-[#030913] p-2 px-6 rounded-full"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                href="#"
+                >Places</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="content">
+      <!-- ==================== Parallax ==================== -->
+      <section
+        id="parallax"
+        class="relative -z-10 flex justify-center items-center overflow-hidden"
+      >
+        <img
+          id="background"
+          class="absolute bottom-0"
+          src="./src/assets/image/background.png"
+          alt="background"
+        />
+        <img
+          id="tree-left"
+          class="absolute bottom-0"
+          src="./src/assets/image/tree-left.png"
+          alt="tree-left"
+        />
+        <img
+          id="tree-right"
+          class="absolute bottom-0"
+          src="./src/assets/image/tree-right.png"
+          alt="tree-right"
+        />
+        <h2
+          id="heading"
+          class="absolute bottom-20 text-3xl sm:bottom-56 sm:text-5xl text-center font-extrabold pb-8"
+        >
+          Parallax Website
+        </h2>
+        <img
+          id="gate-left"
+          class="absolute bottom-0 -left-1/4"
+          src="./src/assets/image/gate-left.png"
+          alt="gate-left"
+        />
+        <img
+          id="gate-right"
+          class="absolute bottom-0 -right-1/4"
+          src="./src/assets/image/gate-right.png"
+          alt="gate-right"
+        />
+        <img
+          id="grass"
+          class="absolute bottom-0"
+          src="./src/assets/image/grass.png"
+          alt="grass"
+        />
+      </section>
+
+      <!-- ==================== Text ==================== -->
+      <section class="bg-[#030913] p-10">
+        <h2 class="text-3xl font-bold pb-8">Parallax Scrolling Website</h2>
+        <p class="text-justify text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam totam
+          nisi ipsa libero excepturi deleniti ullam corporis nobis ipsam vero.
+          Laudantium qui non fugit nulla sequi magni odio, dolorum, tempore
+          deleniti eius, autem dolore in animi. Est porro maiores quibusdam
+          excepturi enim impedit nesciunt, fugit eligendi voluptas delectus nam
+          magnam expedita unde obcaecati voluptatem. Placeat ullam voluptates
+          numquam ratione explicabo quibusdam repellendus doloremque adipisci
+          eaque possimus commodi nobis consequuntur sed esse modi, at maiores
+          earum, voluptas et, dolores inventore? Laudantium vel earum, voluptas
+          ex error eveniet fugit exercitationem doloribus. Aliquam, alias
+          inventore. Quam obcaecati minus est cumque atque numquam tempora.
+        </p>
+        <br /><br />
+
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          praesentium placeat rem minima autem nisi totam eius sunt, ea ex?
+          Molestiae dicta excepturi in ratione dolor fuga et. Debitis
+          consectetur, facere enim voluptatibus et aliquid aspernatur dolorum
+          quasi. Eaque facere, possimus a beatae expedita ab dolores pariatur
+          quaerat, recusandae saepe corporis iure dicta! Asperiores, quibusdam.
+          Accusamus libero sapiente aliquam totam. minus, ea sint placeat
+          ducimus assumenda doloremque eos! Alias molestiae repellat quidem quos
+          hic corrupti. Porro voluptas magni repellat sed debitis! Deleniti,
+          error provident ea voluptatibus vitae quod voluptate dolorem. Mollitia
+          et non eum veritatis dignissimos nam provident.
+        </p>
+        <br /><br />
+
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore
+          repudiandae atque assumenda provident! Molestias mollitia
+          exercitationem temporibus reiciendis velit blanditiis illo quis quas
+          minima minus, nemo quidem veritatis libero tempora odio non quod culpa
+          dignissimos error perferendis nesciunt? Quae necessitatibus debitis
+          doloribus voluptatem quis quas aliquam tempora, quos harum esse, enim
+          consequatur id totam natus praesentium iusto sunt quo! Reiciendis
+          quasi voluptatem ratione dignissimos minus facere maxime eaque
+          corrupti harum incidunt mollitia tempora deleniti dolores dolore
+          cumque autem est, obcaecati libero suscipit in beatae?
+        </p>
+        <br /><br />
+
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque
+          voluptatum ab fugiat laboriosam, iure eligendi laudantium sint odit
+          soluta. Harum, provident? Minus, consectetur odit reiciendis ad quas
+          aspernatur tempore. Natus quidem obcaecati animi mollitia doloribus ex
+          non cupiditate id iste commodi velit molestiae saepe sint unde, nam
+          repudiandae minus sequi facere, veritatis ducimus! Quibusdam pariatur
+          cumque, repellendus esse perferendis architecto perspiciatis! Sapiente
+          eum accusantium ex totam numquam excepturi dolorem!
+        </p>
+        <br /><br />
+
+        <p class="text-justify">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+          excepturi hic culpa voluptas dolorem aliquam, similique qui doloribus,
+          veniam pariatur modi voluptatibus? Iusto laborum veniam tenetur autem
+          aliquam cum pariatur repudiandae quibusdam quo incidunt, excepturi
+          similique dolore molestiae voluptate porro dignissimos fuga sint error
+          accusantium nihil, enim maiores sed quae unde. Perferendis iure
+          inventore in incidunt atque pariatur sit dolorem expedita impedit
+          temporibus laboriosam facere vitae quis fuga aut, odit alias veniam
+          accusamus harum rem deserunt dolores, cupiditate ullam ratione! Facere
+          magni excepturi quaerat aliquam atque nostrum modi nisi aliquid, animi
+          explicabo eum molestias nihil. Porro nam aut hic quibusdam!
+        </p>
+        <br /><br />
+      </section>
+    </main>
+    <footer>
+      <!-- ==================== footer ==================== -->
+    </footer>
+    <script src="./src/JavaScript/index.js"></script>
+  </body>
+</html>
