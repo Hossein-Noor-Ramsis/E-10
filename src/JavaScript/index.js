@@ -24,18 +24,22 @@ content.addEventListener("click", () => {
 });
 
 // Parallax
-const hill1 = document.getElementById("hill1");
-const hill3 = document.getElementById("hill5");
-const hill4 = document.getElementById("hill4");
+const gateLeft = document.getElementById("gate-left");
+const gateRight = document.getElementById("gate-right");
+const treeLeft = document.getElementById("tree-left");
+const treeRight = document.getElementById("tree-right");
 const heading = document.getElementById("heading");
-const leaf = document.getElementById("leaf");
 
 window.addEventListener("scroll", () => {
   const value = window.scrollY;
 
-  hill1.style.translate = `0 ${value < 800 ? value * 0.4 : 800}px`
-  hill3.style.translate = `${value < 800 ? value * 0.6 : 800}px 0`
-  hill4.style.translate = `${value < 800 ? -value * 0.8 : -800}px 0`
-  heading.style.translate = `0 ${value < 800 ? value : 800}px`
-  leaf.style.translate = `${value < 800 ? value : 800}px 0`
+  treeLeft.style.translate = `${value < 800 ? -value * 0.6 : -800}px 0`;
+  treeRight.style.translate = `${value < 800 ? value * 0.8 : 800}px 0`;
+  heading.style.translate = `0 ${value < 800 ? value * 1 : 800}px`;
+  gateRight.style.translate = `${value < 800 ? value * -0.2 : 800}px ${
+    value < 800 ? value * 0.4 : 800
+  }px`;
+  gateLeft.style.translate = `${value < 800 ? value * 0.2 : 800}px ${
+    value < 800 ? value * 0.4 : 800
+  }px`;
 });
