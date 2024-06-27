@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
 
   treeLeft.style.translate = `${value < 800 ? -value * 0.6 : -800}px 0`;
   treeRight.style.translate = `${value < 800 ? value * 0.8 : 800}px 0`;
-  heading.style.translate = `0 ${value < 800 ? value * 1 : 800}px`;
+  heading.style.translate = `0 ${value < 800 ? value * 1.2 : 800}px`;
   gateRight.style.translate = `${value < 800 ? value * -0.2 : 800}px ${
     value < 800 ? value * 0.4 : 800
   }px`;
