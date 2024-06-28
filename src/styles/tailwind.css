@@ -27,3 +27,7 @@ body {
 #parallax {
   height: calc(100vh - 68px);
 }
+
+#parallax img {
+  object-fit: cover;
+}
