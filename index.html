@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./src/styles/app.css" />
   </head>
   <body class="text-white bg-[#030913]">
-    <header class="z-10 text-white">
+    <header id="header" class="z-10 absolute backdrop-blur-md text-white">
       <!-- ==================== navbar ==================== -->
       <nav
-        class="flex justify-between items-center bg-transparent gap-10 p-4 backdrop-blur"
+        class="flex justify-between items-center gap-10 p-4"
       >
         <!-- ===== Nav Logo ===== -->
         <div>
@@ -59,35 +59,35 @@
         <!-- ===== Nav List ===== -->
         <div
           id="nav-list"
-          class="backdrop-blur bg-[#030913] hidden absolute top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
+          class="backdrop-blur-md hidden absolute top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
         >
           <ul
             class="flex flex-col gap-8 justify-between items-center sm:flex-row sm:gap-4"
           >
             <li class="active">
               <a
-                class="bg-[#f9f9f9] text-[#030913] p-2 px-6 rounded-full"
+                class="bg-[#5f8b96] text-white md:bg-[#030913] p-2 px-6 rounded-full"
                 href="#"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                class="text-[#030913] hover:bg-[#5f8b96] hover:text-white md:hover:bg-[#030913] md:text-white p-2 px-6 rounded-full"
                 href="#"
                 >About</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                class="text-[#030913] hover:bg-[#5f8b96] hover:text-white md:hover:bg-[#030913] md:text-white p-2 px-6 rounded-full"
                 href="#"
                 >Places</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#f9f9f9] hover:text-[#030913] p-2 px-6 rounded-full"
+                class="text-[#030913] hover:bg-[#5f8b96] hover:text-white md:hover:bg-[#030913] md:text-white p-2 px-6 rounded-full"
                 href="#"
                 >Contact</a
               >
@@ -104,7 +104,7 @@
       >
         <img
           id="background"
-          class="absolute bottom-0 h-full"
+          class="absolsute bottom-0 h-full"
           src="./src/assets/image/background.png"
           alt="background"
         />

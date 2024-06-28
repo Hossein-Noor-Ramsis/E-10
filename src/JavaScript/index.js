@@ -5,22 +5,27 @@ const closeMenu = document.getElementById("close-menu");
 const navList = document.getElementById("nav-list");
 const content = document.getElementById("content");
 
+const header = document.getElementById("header");
+
 openMenu.addEventListener("click", () => {
   navList.classList.toggle("hidden");
   openMenu.classList.toggle("hidden");
   closeMenu.classList.toggle("hidden");
+  header.style.height = "298px";
 });
 
 closeMenu.addEventListener("click", () => {
   navList.classList.toggle("hidden");
   openMenu.classList.toggle("hidden");
   closeMenu.classList.toggle("hidden");
+  header.style.height = "68px";
 });
 
 content.addEventListener("click", () => {
   navList.classList.add("hidden");
   openMenu.classList.remove("hidden");
   closeMenu.classList.add("hidden");
+  header.style.height = "68px";
 });
 
 // Parallax
