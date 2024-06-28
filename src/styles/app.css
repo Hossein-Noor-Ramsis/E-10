@@ -673,20 +673,6 @@ video {
   padding: 2rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -777,6 +763,7 @@ body {
 #parallax img {
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.2s;
 }
 
 header {
